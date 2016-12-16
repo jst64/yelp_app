@@ -77,10 +77,6 @@ requests==2.11.1
 requests-oauthlib==0.7.0
 responses==0.5.1
 rope-py3k==0.9.4.post1
-ruamel-yaml===-VERSION
 six==1.10.0
-sockjs-tornado==1.0.3
-sphinx==1.4.6
-spyder==3.0.0
 Werkzeug==0.11.11
 yelp==1.0.2
