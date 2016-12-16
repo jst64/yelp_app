@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+            	{% if orange %}
+                	{% for business in orange %}
+                        <h1> {{business.name}}
+                        {{business.rating}}</h1>
+                    {% endfor %}
+                {% else %}
+                	<h1>What are you looking for?</h1>
+					<form action="/" class="form-inline">
+						<div class="form-group">
+							<input type="text" name="biz" placeholder="Category" class="form-control">
+							<input type="text" name="biz1" placeholder="City State" class="form-control">
+						</div>
+						<input type="submit" value="Submit" class="btn btn-primary">
+					</form>
+                {% endif %} 
+            </div>
+        </div>
+    </body>
+</html>
