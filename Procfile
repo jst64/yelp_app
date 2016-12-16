@@ -1,1 +1,1 @@
-web: python pely.py
+web: python pley.py
